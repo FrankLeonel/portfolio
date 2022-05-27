@@ -5,6 +5,7 @@ const colors = {
   gray: "#72727e",
   grayBrand: "#cccccc",
   white: "#FFFFFF",
+  black: "#000000",
 };
 
 export default colors;

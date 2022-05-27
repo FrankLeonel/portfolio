@@ -5,8 +5,36 @@ const Home = () => {
   return (
     <>
       <Header />
-      <h1>Home</h1>
-
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1 id="about_me">Sobre mim</h1>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1 id="projects">Projects</h1>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1 id="services">Services</h1>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1 id="skills">Skills</h1>
       <Footer />
     </>
   );
