@@ -9,20 +9,9 @@ export const Items = styled.ul(({ theme: { breakpoints } }) => ({
     alignItems: "center",
   },
 
-  "&::after": {
-    content: "",
-    background: "rgba(255, 193, 5, 1)",
-    position: "absolute",
-    top: "60%",
-    left: "-15%",
-    width: "20vw",
-    height: "20vw",
-    borderRadius: "50%",
-  },
-
-  "&:hover": {
-    "&::after": {
-      transform: "scale(1.2)",
+  "> *": {
+    "&:first-child": {
+      marginLeft: "10px",
     },
   },
 }));
