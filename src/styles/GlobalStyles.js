@@ -35,4 +35,17 @@ li {
   margin: 0;
   padding: 0;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: ${(props) => props.theme.colors.primary};
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: ${(props) => props.theme.colors.primaryLight};
+  border-radius: 8px;
+}
 `;
