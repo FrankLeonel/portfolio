@@ -7,7 +7,6 @@ export const Item = styled.li(({ theme }) => ({
   width: "100%",
   cursor: "pointer",
   paddingBottom: "46px",
-  animation: "0.5s ease 0.3s 1 normal forwards running navLinkFade",
 }));
 
 export const Link = styled.a(({ theme: { colors } }) => ({
