@@ -2,16 +2,17 @@ import { ReactComponent as CrossIcon } from "assets/icons/cross-icon.svg";
 import { ReactComponent as MenuBurger } from "assets/icons/menu-icon.svg";
 import styled from "styled-components";
 
-export const Header = styled.header(({ theme: { breakpoints } }) => ({
+export const Header = styled.header(({ theme: { colors } }) => ({
   position: "fixed",
   top: 0,
   left: 0,
-  zIndex: 999999,
+  zIndex: 9999,
   width: "100%",
   padding: "20px 0",
+  backgroundColor: colors.primary,
 }));
 
-export const Section = styled.div(({ theme: { breakpoints } }) => ({
+export const Section = styled.div(({ theme }) => ({
   width: "100%",
   display: "flex",
   flexDirection: "row",
