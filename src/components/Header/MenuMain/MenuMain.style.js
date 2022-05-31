@@ -8,6 +8,12 @@ export const Items = styled.ul(({ theme: { breakpoints } }) => ({
     listStyle: "none",
     alignItems: "center",
   },
+
+  "> *": {
+    "&:first-child": {
+      marginLeft: "10px",
+    },
+  },
 }));
 
 export const Item = styled.li`

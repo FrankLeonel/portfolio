@@ -3,7 +3,7 @@ import * as S from "./Item.style";
 const Item = ({ label, path, onClick }) => {
   return (
     <S.Item>
-      <S.Link href={path} onClick={onClick} className="forward">
+      <S.Link href={path} onClick={onClick}>
         <S.Section>{label}</S.Section>
       </S.Link>
     </S.Item>

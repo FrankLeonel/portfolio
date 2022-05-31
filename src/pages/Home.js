@@ -1,11 +1,12 @@
 import Footer from "components/Footer";
 import Header from "components/Header";
+import Presentation from "components/Presentation";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <br />
+      <Presentation />
       <br />
       <br />
       <br />
