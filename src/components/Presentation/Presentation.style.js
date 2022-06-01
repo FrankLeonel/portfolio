@@ -1,41 +1,50 @@
+import Image from "components/Image";
 import styled from "styled-components";
-import breakpoints from "theme/breakpoints";
 
 export const PresentationContainer = styled.div(
   ({ theme: { breakpoints } }) => ({
     marginTop: "63px",
+    // backgroundColor: "#ccc",
 
     [breakpoints.lg]: {
-      marginTop: "70px",
+      marginTop: "74px",
     },
   })
 );
 
 export const Section = styled.div(({ theme: { breakpoints } }) => ({
   display: "flex",
-  flexDirection: "column",
-  webkitBoxAlign: "center",
-  msFlexAlign: "center",
   alignItems: "center",
+  width: "100%",
   height: "80vh",
-  padding: "100px 0",
 
   "> div": {
     display: "flex",
     flexDirection: "column",
+    justifyContent: "center",
+    // backgroundColor: "black",
+    width: "100%",
+    height: "100%",
   },
 
   "> *": {
-    flex: 1,
-    "&:nth-child(2)": {},
+    flex: 0,
+    "&:first-child": {
+      flexBasis: "100%",
+    },
   },
 
   [breakpoints.md]: {
-    flexDirection: "row",
+    "> *": {
+      flex: 1,
+      "&:first-child": {
+        flexBasis: "30%",
+      },
+    },
   },
 }));
 
-export const Text = styled.h1(({ theme }) => ({
+export const Text = styled.h1(({ theme: { breakpoints } }) => ({
   margin: 0,
   display: "inline-block",
   fontSize: "1.8rem",
@@ -56,7 +65,7 @@ export const Text = styled.h1(({ theme }) => ({
   },
 
   ".name": {
-    fontSize: "2.7rem",
+    fontSize: "2.6rem",
     fontWeight: 600,
   },
 
@@ -67,6 +76,7 @@ export const Text = styled.h1(({ theme }) => ({
 
 export const Profission = styled.p(({ theme: { breakpoints, colors } }) => ({
   margin: 0,
+  display: "inline-block",
   fontSize: "1.8rem",
   fontFamily: "DM Sans",
   fontWeight: 400,
@@ -105,11 +115,18 @@ export const Profission = styled.p(({ theme: { breakpoints, colors } }) => ({
 export const ContainerMedias = styled.div(({ theme: { breakpoints } }) => ({
   display: "flex",
   flexDirection: "column",
+  alignItems: "center",
   margin: "20px 0",
   gap: "20px",
 
+  [breakpoints.sm]: {
+    flexDirection: "row",
+    justifyContent: "center",
+  },
+
   [breakpoints.md]: {
     flexDirection: "row",
+    justifyContent: "flex-start",
   },
 }));
 
@@ -121,8 +138,9 @@ const Button = styled.a(({ theme: { breakpoints } }) => ({
   width: "100%",
   heigth: "48px",
   padding: "16px",
+  wordBreak: "break-word",
 
-  [breakpoints.md]: {
+  [breakpoints.sm]: {
     width: "160px",
   },
 }));
@@ -136,3 +154,15 @@ export const ContainerEmail = styled(Button)(({ theme: { colors } }) => ({
   border: `1px solid ${colors.grayBrand}`,
   color: colors.white,
 }));
+
+export const ImagePresentation = styled(Image)(
+  ({ theme: { breakpoints } }) => ({
+    width: "90%",
+    height: "90%",
+    display: "none",
+
+    [breakpoints.md]: {
+      display: "block",
+    },
+  })
+);
