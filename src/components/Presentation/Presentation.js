@@ -1,11 +1,13 @@
+import PngPresentation from "assets/images/presentation.png";
+import WebpPresentation from "assets/images/presentation.webp";
 import Content from "components/Content";
 import file from "files/cv.pdf";
 import * as S from "./Presentation.style";
 
 const Presentation = () => {
   return (
-    <Content>
-      <S.PresentationContainer>
+    <S.PresentationContainer>
+      <Content>
         <S.Section>
           <div>
             <S.Text>
@@ -29,10 +31,16 @@ const Presentation = () => {
               </S.ContainerEmail>
             </S.ContainerMedias>
           </div>
-          <h1>Teste</h1>
+
+          <S.ImagePresentation
+            src={WebpPresentation}
+            webp={WebpPresentation}
+            fallback={PngPresentation}
+            alt="Desenvolvedor"
+          />
         </S.Section>
-      </S.PresentationContainer>
-    </Content>
+      </Content>
+    </S.PresentationContainer>
   );
 };
 
