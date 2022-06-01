@@ -3,11 +3,10 @@ import styled from "styled-components";
 
 export const PresentationContainer = styled.div(
   ({ theme: { breakpoints } }) => ({
-    marginTop: "63px",
-    // backgroundColor: "#ccc",
+    padding: "80px 0",
 
     [breakpoints.lg]: {
-      marginTop: "74px",
+      padding: "80px 0 20px",
     },
   })
 );
@@ -16,15 +15,14 @@ export const Section = styled.div(({ theme: { breakpoints } }) => ({
   display: "flex",
   alignItems: "center",
   width: "100%",
-  height: "80vh",
+  height: "70vh",
 
   "> div": {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    // backgroundColor: "black",
     width: "100%",
-    height: "100%",
+    height: "auto",
   },
 
   "> *": {
@@ -35,6 +33,8 @@ export const Section = styled.div(({ theme: { breakpoints } }) => ({
   },
 
   [breakpoints.md]: {
+    height: "74vh",
+
     "> *": {
       flex: 1,
       "&:first-child": {
@@ -163,6 +163,20 @@ export const ImagePresentation = styled(Image)(
 
     [breakpoints.md]: {
       display: "block",
+    },
+
+    webkitAnimation: "icon-move 3s ease 0.6s infinite alternate",
+    animation: "icon-move 3s ease 0.6s infinite alternate",
+
+    "@keyframes icon-move": {
+      "0%": {
+        webkitTransform: "translate3d(0, 0, 0)",
+        transform: "translate3d(0, 0, 0)",
+      },
+      "100%": {
+        webkitTransform: "translate3d(10px, -40px, 0)",
+        transform: "translate3d(10px, -40px, 0)",
+      },
     },
   })
 );
