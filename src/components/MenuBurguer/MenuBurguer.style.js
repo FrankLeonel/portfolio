@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MenuBurguer = styled.button(
   ({ theme: { breakpoints, colors }, open }) => ({
     position: "absolute",
-    right: 40,
+    right: 20,
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-around",

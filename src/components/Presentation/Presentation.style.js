@@ -3,10 +3,14 @@ import styled from "styled-components";
 
 export const PresentationContainer = styled.div(
   ({ theme: { breakpoints } }) => ({
-    marginTop: "63px",
+    padding: "80px 0",
+
+    [breakpoints.md]: {
+      padding: 0,
+    },
 
     [breakpoints.lg]: {
-      marginTop: "74px",
+      padding: "50px 0 20px",
     },
   })
 );
@@ -15,29 +19,21 @@ export const Section = styled.div(({ theme: { breakpoints } }) => ({
   display: "flex",
   alignItems: "center",
   width: "100%",
-  height: "80vh",
+  height: "70vh",
 
   "> div": {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     width: "100%",
-    height: "100%",
-  },
-
-  "> *": {
-    flex: 0,
-    "&:first-child": {
-      flexBasis: "100%",
-    },
+    height: "auto",
   },
 
   [breakpoints.md]: {
-    "> *": {
-      flex: 1,
-      "&:first-child": {
-        flexBasis: "30%",
-      },
+    height: "74vh",
+
+    "> div": {
+      width: "50%",
     },
   },
 }));
@@ -156,12 +152,6 @@ export const ContainerEmail = styled(Button)(({ theme: { colors } }) => ({
 export const AnimationCoding = styled.h1(
   ({ theme: { breakpoints, colors } }) => ({
     display: "none",
-    fontSize: "5rem",
-    padding: "0.5rem",
-    fontWeight: "bold",
-    letterSpacing: "0.1rem",
-    textAlign: "center",
-    overflow: "hidden",
 
     span: {
       fontWeight: 600,
@@ -169,7 +159,14 @@ export const AnimationCoding = styled.h1(
     },
 
     [breakpoints.md]: {
+      width: "50%",
+      paddingLeft: "50px",
       display: "block",
+      fontSize: "5rem",
+      fontWeight: "bold",
+      letterSpacing: "0.1rem",
+      textAlign: "center",
+      overflow: "hidden",
     },
   })
 );
