@@ -153,106 +153,23 @@ export const ContainerEmail = styled(Button)(({ theme: { colors } }) => ({
   color: colors.white,
 }));
 
-// export const ImagePresentation = styled(Image)(
-//   ({ theme: { breakpoints } }) => ({
-//     width: "90%",
-//     height: "90%",
-//     display: "none",
-
-//     [breakpoints.md]: {
-//       display: "block",
-//     },
-//   })
-// );
-
-export const ContainerImage = styled.div(
+export const AnimationCoding = styled.h1(
   ({ theme: { breakpoints, colors } }) => ({
-    width: "50%",
     display: "none",
-    webkitBoxPack: "center",
-    msFlexPack: "center",
-    justifyContent: "center",
-    webkitBoxAlign: "center",
-    msFlexAlign: "center",
-    alignItems: "center",
-    position: "relative",
-    webkitTransition: "1s all ease",
-    transition: "1s all ease",
+    fontSize: "5rem",
+    padding: "0.5rem",
+    fontWeight: "bold",
+    letterSpacing: "0.1rem",
+    textAlign: "center",
+    overflow: "hidden",
 
-    ".programmer": {
-      width: "70%",
-      height: "70%",
-      path: {
-        fill: colors.white,
-      },
-      "&:hover": {
-        webkitTransform: "scale(1.1)",
-        transform: "scale(1.1)",
-      },
+    span: {
+      fontWeight: 600,
+      color: colors.primaryLight,
     },
 
     [breakpoints.md]: {
-      display: "flex",
+      display: "block",
     },
   })
 );
-
-export const AboutFigure = styled.div(({ theme: { breakpoints, colors } }) => ({
-  display: "flex",
-  webkitBoxPack: "center",
-  msFlexPack: "center",
-  justifyContent: "center",
-  webkitBoxAlign: "center",
-  msFlexAlign: "center",
-  alignItems: "center",
-
-  "> *": {
-    position: "absolute",
-    borderRadius: "4px",
-    width: "72px",
-    height: "72px",
-    path: {
-      fill: colors.white,
-    },
-  },
-
-  ".figure_one": {
-    position: "absolute",
-    top: "260px",
-    right: "420px",
-  },
-  ".figure_two": {
-    top: "80px",
-    right: "360px",
-  },
-  ".figure_three": {
-    top: "80px",
-    right: "50px",
-  },
-  ".figure_four": {
-    top: "260px",
-    right: "10px",
-  },
-
-  ".icon_one": {
-    animation: "icon-move 3s ease 3.9s infinite alternate",
-  },
-  ".icon_two": {
-    animation: "icon-move 3s ease 2.9s infinite alternate",
-  },
-  ".icon_three": {
-    animation: "icon-move 3s ease 1.9s infinite alternate",
-  },
-  ".icon_four": {
-    animation: "icon-move 3s ease 0.6s infinite alternate",
-  },
-
-  "@keyframes icon-move": {
-    "0%": {
-      transform: "translate3d(0, 0, 0)",
-    },
-    "100%": {
-      transform: "translate3d(10px, -40px, 0)",
-    },
-  },
-}));
