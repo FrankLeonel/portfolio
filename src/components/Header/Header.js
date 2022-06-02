@@ -27,7 +27,6 @@ const Header = () => {
     },
   ];
 
-  console.log(showMenu);
   return (
     <S.Header>
       <Content>

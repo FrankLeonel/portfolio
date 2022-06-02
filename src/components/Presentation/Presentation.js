@@ -1,10 +1,17 @@
-import PngPresentation from "assets/images/presentation.png";
-import WebpPresentation from "assets/images/presentation.webp";
 import Content from "components/Content";
 import file from "files/cv.pdf";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 import * as S from "./Presentation.style";
 
 const Presentation = () => {
+  const { text } = useTypewriter({
+    words: ["hard", "fun", "a journey", "LIFE!"],
+    loop: 0,
+    typeSpeed: 160,
+    deleteSpeed: 100,
+    delaySpeed: 2000,
+  });
+
   return (
     <S.PresentationContainer>
       <Content>
@@ -32,12 +39,10 @@ const Presentation = () => {
             </S.ContainerMedias>
           </div>
 
-          <S.ImagePresentation
-            src={WebpPresentation}
-            webp={WebpPresentation}
-            fallback={PngPresentation}
-            alt="Desenvolvedor"
-          />
+          <S.AnimationCoding>
+            Coding is <span>{text}</span>
+            <Cursor />
+          </S.AnimationCoding>
         </S.Section>
       </Content>
     </S.PresentationContainer>

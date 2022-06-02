@@ -1,4 +1,4 @@
-import Image from "components/Image";
+// import Image from "components/Image";
 import styled from "styled-components";
 
 export const PresentationContainer = styled.div(
@@ -155,28 +155,23 @@ export const ContainerEmail = styled(Button)(({ theme: { colors } }) => ({
   color: colors.white,
 }));
 
-export const ImagePresentation = styled(Image)(
-  ({ theme: { breakpoints } }) => ({
-    width: "90%",
-    height: "90%",
+export const AnimationCoding = styled.h1(
+  ({ theme: { breakpoints, colors } }) => ({
     display: "none",
+    fontSize: "5rem",
+    padding: "0.5rem",
+    fontWeight: "bold",
+    letterSpacing: "0.1rem",
+    textAlign: "center",
+    overflow: "hidden",
+
+    span: {
+      fontWeight: 600,
+      color: colors.primaryLight,
+    },
 
     [breakpoints.md]: {
       display: "block",
-    },
-
-    webkitAnimation: "icon-move 3s ease 0.6s infinite alternate",
-    animation: "icon-move 3s ease 0.6s infinite alternate",
-
-    "@keyframes icon-move": {
-      "0%": {
-        webkitTransform: "translate3d(0, 0, 0)",
-        transform: "translate3d(0, 0, 0)",
-      },
-      "100%": {
-        webkitTransform: "translate3d(10px, -40px, 0)",
-        transform: "translate3d(10px, -40px, 0)",
-      },
     },
   })
 );
