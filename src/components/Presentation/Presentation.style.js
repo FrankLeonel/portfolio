@@ -5,8 +5,12 @@ export const PresentationContainer = styled.div(
   ({ theme: { breakpoints } }) => ({
     padding: "80px 0",
 
+    [breakpoints.md]: {
+      padding: 0,
+    },
+
     [breakpoints.lg]: {
-      padding: "80px 0 20px",
+      padding: "50px 0 20px",
     },
   })
 );
@@ -25,21 +29,11 @@ export const Section = styled.div(({ theme: { breakpoints } }) => ({
     height: "auto",
   },
 
-  "> *": {
-    flex: 0,
-    "&:first-child": {
-      flexBasis: "100%",
-    },
-  },
-
   [breakpoints.md]: {
     height: "74vh",
 
-    "> *": {
-      flex: 1,
-      "&:first-child": {
-        flexBasis: "30%",
-      },
+    "> div": {
+      width: "50%",
     },
   },
 }));
@@ -158,12 +152,6 @@ export const ContainerEmail = styled(Button)(({ theme: { colors } }) => ({
 export const AnimationCoding = styled.h1(
   ({ theme: { breakpoints, colors } }) => ({
     display: "none",
-    fontSize: "5rem",
-    padding: "0.5rem",
-    fontWeight: "bold",
-    letterSpacing: "0.1rem",
-    textAlign: "center",
-    overflow: "hidden",
 
     span: {
       fontWeight: 600,
@@ -171,7 +159,14 @@ export const AnimationCoding = styled.h1(
     },
 
     [breakpoints.md]: {
+      width: "50%",
+      paddingLeft: "50px",
       display: "block",
+      fontSize: "5rem",
+      fontWeight: "bold",
+      letterSpacing: "0.1rem",
+      textAlign: "center",
+      overflow: "hidden",
     },
   })
 );
