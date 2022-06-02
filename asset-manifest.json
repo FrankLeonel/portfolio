@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.c24d02f9.js",
+    "main.js": "/portfolio/static/js/main.7c59649c.js",
     "static/media/cv.pdf": "/portfolio/static/media/cv.cc08f229d3d3589d5767.pdf",
-    "static/media/presentation.png": "/portfolio/static/media/presentation.f360222806001659a686.png",
-    "static/media/presentation.webp": "/portfolio/static/media/presentation.c5f59262444b4bd99974.webp",
+    "static/media/html5.svg": "/portfolio/static/media/html5.c73cbf8350158c0f46f00525c9e96a9a.svg",
+    "static/media/programmer.svg": "/portfolio/static/media/programmer.b3524a151ce28359b92022a2d7f4ea1a.svg",
+    "static/media/react.svg": "/portfolio/static/media/react.ee5e4a8fbec192b9a6d421a57ddd2c2b.svg",
     "index.html": "/portfolio/index.html",
+    "static/media/js.svg": "/portfolio/static/media/js.c173ee23ecb74557806e1b1c5e856199.svg",
     "static/media/dev.svg": "/portfolio/static/media/dev.41bfc5a2b6750ce70a19fa9044662e8c.svg",
     "static/media/menu-icon.svg": "/portfolio/static/media/menu-icon.d84946c0e57b3b05f2b60dfa8c58774c.svg",
     "static/media/cross-icon.svg": "/portfolio/static/media/cross-icon.9905073188c7cacf7128ad9ac71487df.svg",
-    "main.c24d02f9.js.map": "/portfolio/static/js/main.c24d02f9.js.map"
+    "static/media/css.svg": "/portfolio/static/media/css.1422a6715ec35fe6db206f409bc04bd5.svg",
+    "main.7c59649c.js.map": "/portfolio/static/js/main.7c59649c.js.map"
   },
   "entrypoints": [
-    "static/js/main.c24d02f9.js"
+    "static/js/main.7c59649c.js"
   ]
 }
