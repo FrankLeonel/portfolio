@@ -4,6 +4,7 @@ import { ReactComponent as JSIcon } from "assets/icons/js.svg";
 import { ReactComponent as ProgrammerIcon } from "assets/icons/programmer.svg";
 import { ReactComponent as ReactIcon } from "assets/icons/react.svg";
 import Content from "components/Content";
+import Divider from "components/Divider";
 import * as S from "./AboutMe.style";
 
 const AboutMe = () => {
@@ -29,6 +30,7 @@ const AboutMe = () => {
 
           <S.ContainerText>
             <h2>Quem sou</h2>
+            <Divider />
             <p>
               Meu nome é Frank Leonel, graduando em Sistemas de Informação pela
               Universidade Federal do Ceará - Campus Crateús. Atualmente,

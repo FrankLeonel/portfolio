@@ -174,7 +174,6 @@ export const ContainerText = styled.div(
 
     h2: {
       margin: 0,
-      paddingBottom: "24px",
       fontSize: "2.8rem",
       fontWeight: 500,
     },
@@ -182,7 +181,7 @@ export const ContainerText = styled.div(
     p: {
       margin: 0,
       lineHeight: "36px",
-      color: colors.gray,
+      color: colors.grayBrand,
       fontFamily: "DM Sans",
       fontSize: "1.4rem",
     },
