@@ -1,6 +1,6 @@
 import { ReactComponent as CssIcon } from "assets/icons/css.svg";
-import { ReactComponent as HtmlIcon } from "assets/icons/html5.svg";
-import { ReactComponent as JSIcon } from "assets/icons/js.svg";
+import { ReactComponent as HtmlIcon } from "assets/icons/html.svg";
+import { ReactComponent as JSIcon } from "assets/icons/javascript.svg";
 import { ReactComponent as ProgrammerIcon } from "assets/icons/programmer.svg";
 import { ReactComponent as ReactIcon } from "assets/icons/react.svg";
 import Content from "components/Content";
