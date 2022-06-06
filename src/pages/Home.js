@@ -17,7 +17,7 @@ const Home = () => {
       <br />
       <br />
       <br />
-      <h1 id="services">Services</h1>
+      <h1 id="services">Serviços</h1>
       <br />
       <br />
       <br />
