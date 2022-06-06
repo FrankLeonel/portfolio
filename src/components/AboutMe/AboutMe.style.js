@@ -67,9 +67,6 @@ export const AboutFigure = styled.div(({ theme: { breakpoints, colors } }) => ({
     position: "absolute",
     width: "50px",
     height: "50px",
-    path: {
-      fill: colors.white,
-    },
   },
 
   ".figure_one": {

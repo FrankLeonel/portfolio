@@ -141,7 +141,7 @@ const Button = styled.a(({ theme: { breakpoints } }) => ({
 
 export const ContainerCV = styled(Button)(({ theme: { colors } }) => ({
   backgroundColor: colors.primaryLight,
-  color: colors.white,
+  color: colors.black,
 }));
 
 export const ContainerEmail = styled(Button)(({ theme: { colors } }) => ({

@@ -2,6 +2,7 @@ import AboutMe from "components/AboutMe";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import Presentation from "components/Presentation";
+import Projects from "components/Projects";
 
 const Home = () => {
   return (
@@ -9,12 +10,7 @@ const Home = () => {
       <Header />
       <Presentation />
       <AboutMe />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1 id="projects">Projects</h1>
+      <Projects />
       <br />
       <br />
       <br />
