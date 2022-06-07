@@ -3,6 +3,7 @@ import Footer from "components/Footer";
 import Header from "components/Header";
 import Presentation from "components/Presentation";
 import Projects from "components/Projects";
+import Skills from "components/Skills";
 
 const Home = () => {
   return (
@@ -11,19 +12,13 @@ const Home = () => {
       <Presentation />
       <AboutMe />
       <Projects />
+      <Skills />
       <br />
       <br />
       <br />
       <br />
       <br />
-      <br />
-      <h1 id="services">Serviços</h1>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1 id="skills">Skills</h1>
+      <h1 id="conhecimentos">Conhecimentos</h1>
       <Footer />
     </>
   );

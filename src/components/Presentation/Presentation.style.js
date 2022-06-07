@@ -1,4 +1,3 @@
-// import Image from "components/Image";
 import styled from "styled-components";
 
 export const PresentationContainer = styled.div(
@@ -7,10 +6,6 @@ export const PresentationContainer = styled.div(
 
     [breakpoints.md]: {
       padding: 0,
-    },
-
-    [breakpoints.lg]: {
-      padding: "50px 0 20px",
     },
   })
 );

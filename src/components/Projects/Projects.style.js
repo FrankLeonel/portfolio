@@ -1,14 +1,10 @@
 import Lottie from "react-lottie-player";
 import styled from "styled-components";
 
-export const ProjectsContainer = styled.div(({ theme: { breakpoints } }) => ({
+export const ProjectsContainer = styled.div(({ theme }) => ({
   padding: "80px 0",
   width: "100%",
   height: "auto",
-
-  [breakpoints.lg]: {
-    padding: "60px 0 20px",
-  },
 }));
 
 export const Section = styled.div(({ theme }) => ({

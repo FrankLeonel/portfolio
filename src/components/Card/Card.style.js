@@ -5,17 +5,18 @@ const textWrapping = css`
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 `;
 
 export const CardContainer = styled.li(
-  ({ theme: { breakpoints, colors }, background, orientation }) => ({
+  ({ theme: { breakpoints, colors }, background, orientation, ...props }) => ({
     display: "flex",
     flexDirection: "column",
     padding: "20px 10px",
     width: "inherit",
-    height: "380px",
+    height: "auto",
+    minHeight: "380px",
     listStyleType: "none",
     backgroundColor: background,
     cursor: "pointer",
@@ -48,17 +49,21 @@ export const CardContainer = styled.li(
       fontSize: "1.5rem",
       fontFamily: "DM Sans",
       lineHeight: "34px",
+      color: colors.grayBrand,
       textWrapping,
     },
 
     [breakpoints.md]: {
       padding: "32px",
     },
+
+    ...props,
   })
 );
 
 export const Icon = styled.img(({ theme: { breakpoints } }) => ({
-  // width: "20%",
+  width: "20%",
+  height: "100%",
 
   [breakpoints.md]: {
     width: "26%",
