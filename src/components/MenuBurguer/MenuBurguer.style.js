@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MenuBurguer = styled.button(
+export const MenuBurguer = styled.div(
   ({ theme: { breakpoints, colors }, open }) => ({
     position: "absolute",
     right: 20,

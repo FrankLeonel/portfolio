@@ -25,8 +25,6 @@ export const ContainerImage = styled.div(
     display: "none",
     padding: "30px 0",
     ".programmer": {
-      width: "60%",
-      height: "60%",
       path: {
         fill: colors.white,
       },
@@ -65,8 +63,6 @@ export const AboutFigure = styled.div(({ theme: { breakpoints, colors } }) => ({
 
   "> *": {
     position: "absolute",
-    width: "50px",
-    height: "50px",
   },
 
   ".figure_one": {

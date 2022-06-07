@@ -58,7 +58,7 @@ export const CardContainer = styled.li(
 );
 
 export const Icon = styled.img(({ theme: { breakpoints } }) => ({
-  width: "20%",
+  // width: "20%",
 
   [breakpoints.md]: {
     width: "26%",

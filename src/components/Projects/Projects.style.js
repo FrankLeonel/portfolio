@@ -1,3 +1,4 @@
+import Lottie from "react-lottie-player";
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div(({ theme: { breakpoints } }) => ({
@@ -34,14 +35,6 @@ export const ContainerText = styled.div(({ theme }) => ({
     fontSize: "2.8rem",
     fontWeight: 500,
   },
-
-  // [breakpoints.md]: {
-  //   padding: "0 0 30px 60px",
-  // },
-
-  // [breakpoints.lg]: {
-  //   padding: "60px 0 30px 60px",
-  // },
 }));
 
 export const GridProjects = styled.ul(({ theme: { breakpoints } }) => ({
@@ -58,8 +51,25 @@ export const GridProjects = styled.ul(({ theme: { breakpoints } }) => ({
   [breakpoints.lg]: {
     gridTemplateColumns: "repeat(3, 1fr)",
   },
+}));
 
-  // [breakpoints.xl]: {
-  //   gridTemplateColumns: "repeat(4, 1fr)",
-  // },
+export const ContainerLoading = styled.div(({ theme }) => ({
+  width: "100%",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "10px",
+}));
+
+export const Animation = styled(Lottie)(({ theme }) => ({
+  width: "120px",
+  height: "120px",
+}));
+
+export const Loading = styled.h2(({ theme }) => ({
+  margin: 0,
+  fontSize: "2.0rem",
+  fontWeight: 500,
+  textAlign: "center",
 }));

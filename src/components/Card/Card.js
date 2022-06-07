@@ -25,6 +25,8 @@ const Card = ({
             icon ? icon.toLowerCase() + ".svg" : "css.svg"
           }`)}
           alt={`ícone do ${icon ? icon : "css"}`}
+          width="20%"
+          height="100%"
         />
 
         <h3>{title}</h3>

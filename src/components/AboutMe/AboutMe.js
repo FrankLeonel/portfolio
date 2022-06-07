@@ -13,18 +13,30 @@ const AboutMe = () => {
       <Content>
         <S.Section>
           <S.ContainerImage>
-            <ProgrammerIcon className="programmer" />
+            <ProgrammerIcon className="programmer" width="60%" height="60%" />
             <S.AboutFigure>
-              <ReactIcon className="figure_one icon_one" />
+              <ReactIcon
+                className="figure_one icon_one"
+                width={50}
+                height={50}
+              />
             </S.AboutFigure>
             <S.AboutFigure>
-              <JSIcon className="figure_two icon_two" />
+              <JSIcon className="figure_two icon_two" width={50} height={50} />
             </S.AboutFigure>
             <S.AboutFigure>
-              <HtmlIcon className="figure_three icon_three" />
+              <HtmlIcon
+                className="figure_three icon_three"
+                width={50}
+                height={50}
+              />
             </S.AboutFigure>
             <S.AboutFigure>
-              <CssIcon className="figure_four icon_four" />
+              <CssIcon
+                className="figure_four icon_four"
+                width={50}
+                height={50}
+              />
             </S.AboutFigure>
           </S.ContainerImage>
 
@@ -32,10 +44,11 @@ const AboutMe = () => {
             <h2>Quem sou</h2>
             <Divider />
             <p>
-              Meu nome é Frank Leonel, graduando em Sistemas de Informação pela
-              Universidade Federal do Ceará - Campus Crateús. Atualmente,
-              trabalho como desenvolvedor front-end, mas tenho conhecimento no
-              desenvolvimento de interfaces mobile.
+              Meu nome é Frank Leonel, sou técnico de informática e graduando em
+              Sistemas de Informação pela Universidade Federal do Ceará - Campus
+              Crateús. Atualmente, trabalho como desenvolvedor front-end, mas
+              tenho conhecimento no desenvolvimento de interfaces mobile (Nativo
+              e Híbrido).
             </p>
           </S.ContainerText>
         </S.Section>
