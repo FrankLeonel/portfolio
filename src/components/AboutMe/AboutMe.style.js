@@ -1,17 +1,11 @@
 import styled from "styled-components";
 
-export const AboutMeContainer = styled.div(
-  ({ theme: { breakpoints, colors } }) => ({
-    padding: "80px 0",
-    backgroundColor: colors.secondary,
-    width: "100%",
-    height: "auto",
-
-    [breakpoints.lg]: {
-      padding: "60px 0 20px",
-    },
-  })
-);
+export const AboutMeContainer = styled.div(({ theme: { colors } }) => ({
+  padding: "80px 0",
+  backgroundColor: colors.secondary,
+  width: "100%",
+  height: "auto",
+}));
 
 export const Section = styled.div(({ theme }) => ({
   display: "flex",

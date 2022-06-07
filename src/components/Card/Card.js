@@ -8,6 +8,7 @@ const Card = ({
   url,
   background,
   orientation = "row",
+  ...props
 }) => {
   const theme = useTheme();
   const openInNewTab = (url) => {
@@ -18,6 +19,7 @@ const Card = ({
       onClick={() => openInNewTab(url)}
       background={theme.colors[background]}
       orientation={orientation}
+      {...props}
     >
       <div>
         <S.Icon

@@ -18,7 +18,7 @@ const Home = () => {
       <br />
       <br />
       <br />
-      <h1 id="skills">Skills</h1>
+      <h1 id="conhecimentos">Conhecimentos</h1>
       <Footer />
     </>
   );

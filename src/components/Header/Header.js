@@ -18,12 +18,12 @@ const Header = () => {
       path: "#projects",
     },
     {
-      label: "Serviços",
-      path: "#services",
-    },
-    {
       label: "Habilidades",
       path: "#skills",
+    },
+    {
+      label: "Conhecimentos",
+      path: "#conhecimentos",
     },
   ];
 
