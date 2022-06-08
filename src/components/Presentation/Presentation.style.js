@@ -1,14 +1,10 @@
 import styled from "styled-components";
 
-export const PresentationContainer = styled.div(
-  ({ theme: { breakpoints } }) => ({
-    padding: "80px 0",
-
-    [breakpoints.md]: {
-      padding: 0,
-    },
-  })
-);
+export const PresentationContainer = styled.div(({ theme }) => ({
+  padding: "80px 0",
+  width: "100%",
+  height: "auto",
+}));
 
 export const Section = styled.div(({ theme: { breakpoints } }) => ({
   display: "flex",
@@ -92,7 +88,7 @@ export const Profission = styled.p(({ theme: { breakpoints, colors } }) => ({
       width: 0,
     },
     to: {
-      width: "10em",
+      width: "8.6em",
     },
   },
 

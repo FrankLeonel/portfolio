@@ -183,3 +183,18 @@ export const ContainerText = styled.div(
     },
   })
 );
+
+export const GridMedias = styled.ul(({ theme: { breakpoints } }) => ({
+  marginTop: "20px",
+  display: "grid",
+  gridTemplateColumns: "repeat(1, 1fr)",
+  gridGap: "30px",
+
+  [breakpoints.sm]: {
+    gridTemplateColumns: "repeat(2, 1fr)",
+  },
+
+  [breakpoints.lg]: {
+    gridTemplateColumns: "repeat(4, 1fr)",
+  },
+}));

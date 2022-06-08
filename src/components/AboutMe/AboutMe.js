@@ -1,10 +1,15 @@
 import { ReactComponent as CssIcon } from "assets/icons/css.svg";
+import { ReactComponent as EmailIcon } from "assets/icons/email.svg";
+import { ReactComponent as GitHubIcon } from "assets/icons/github.svg";
 import { ReactComponent as HtmlIcon } from "assets/icons/html.svg";
+import { ReactComponent as InstagramIcon } from "assets/icons/instagram.svg";
 import { ReactComponent as JSIcon } from "assets/icons/javascript.svg";
+import { ReactComponent as LinkedinIcon } from "assets/icons/linkedin.svg";
 import { ReactComponent as ProgrammerIcon } from "assets/icons/programmer.svg";
 import { ReactComponent as ReactIcon } from "assets/icons/react.svg";
 import Content from "components/Content";
 import Divider from "components/Divider";
+import TextDataRounded from "components/TextDataRounded";
 import * as S from "./AboutMe.style";
 
 const AboutMe = () => {
@@ -52,6 +57,28 @@ const AboutMe = () => {
             </p>
           </S.ContainerText>
         </S.Section>
+        <S.GridMedias>
+          <TextDataRounded
+            icon={<EmailIcon />}
+            title="Email"
+            description="franksleonel@gmail.com"
+          />
+          <TextDataRounded
+            icon={<InstagramIcon />}
+            title="Instagram"
+            description="@frankleonel"
+          />
+          <TextDataRounded
+            icon={<GitHubIcon />}
+            title="GitHub"
+            description="github.com/FrankLeonel"
+          />
+          <TextDataRounded
+            icon={<LinkedinIcon />}
+            title="Linkedin"
+            description="linkedin.com/in/frankleonel/"
+          />
+        </S.GridMedias>
       </Content>
     </S.AboutMeContainer>
   );
