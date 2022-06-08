@@ -72,7 +72,7 @@ export const Profission = styled.p(({ theme: { breakpoints, colors } }) => ({
   overflow: "hidden",
 
   animation:
-    "blinkCursor 600ms steps(50) infinite normal, typing 4s steps(50) 2s normal both",
+    "blinkCursor 600ms steps(40) infinite normal, typing 4s steps(40) 2s normal both",
 
   "@keyframes blinkCursor": {
     from: {
@@ -88,7 +88,7 @@ export const Profission = styled.p(({ theme: { breakpoints, colors } }) => ({
       width: 0,
     },
     to: {
-      width: "8.6em",
+      width: "9em",
     },
   },
 
