@@ -88,7 +88,7 @@ export const Profission = styled.p(({ theme: { breakpoints, colors } }) => ({
       width: 0,
     },
     to: {
-      width: "9em",
+      width: "9.6em",
     },
   },
 
