@@ -1,6 +1,7 @@
 import AboutMe from "components/AboutMe";
 import Footer from "components/Footer";
 import Header from "components/Header";
+import Knowledge from "components/Knowledge";
 import Presentation from "components/Presentation";
 import Projects from "components/Projects";
 import Skills from "components/Skills";
@@ -13,12 +14,7 @@ const Home = () => {
       <AboutMe />
       <Projects />
       <Skills />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1 id="conhecimentos">Conhecimentos</h1>
+      <Knowledge />
       <Footer />
     </>
   );
