@@ -117,6 +117,11 @@ const Button = styled.a(({ theme: { breakpoints } }) => ({
   [breakpoints.sm]: {
     width: "180px",
   },
+
+  [breakpoints.md]: {
+    padding: "16px 0",
+    width: "180px",
+  },
 }));
 
 export const ContainerCV = styled(Button)(({ theme: { colors } }) => ({
