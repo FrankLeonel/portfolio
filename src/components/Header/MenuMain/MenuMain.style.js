@@ -22,33 +22,30 @@ export const Item = styled.li`
   align-items: center;
   justify-content: center;
   user-select: none;
-  margin-left: 48px;
+  margin-left: 20px;
+
+  ${(props) => props.theme.breakpoints.xl} {
+    margin-left: 48px;
+  }
 
   :after {
     content: "";
     display: block;
     height: 1px;
     width: 100%;
-    -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    background: -webkit-gradient(
-      linear,
-      right top,
-      left top,
-      from(#70c5fe),
-      to(#140d26)
+    background: linear-gradient(
+      270deg,
+      ${(props) => props.theme.colors.primaryLight} 0%,
+      ${(props) => props.theme.colors.primary} 100%
     );
-    background: linear-gradient(270deg, #70c5fe 0%, #140d26 100%);
-    -webkit-transform-origin: bottom right;
     transform-origin: bottom right;
     transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1),
       -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
   }
 
   :hover:after {
-    -webkit-transform: scaleX(1);
     transform: scaleX(1);
-    -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
   }
 `;
