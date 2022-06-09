@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`  
 * {
-  font-family: "IBM Plex Sans";
+  font-family: "Saira";
   color: inherit;
   box-sizing: border-box;
 }

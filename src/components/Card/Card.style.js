@@ -5,7 +5,7 @@ const textWrapping = css`
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
 `;
 
@@ -47,7 +47,6 @@ export const CardContainer = styled.li(
     p: {
       margin: 0,
       fontSize: "1.5rem",
-      fontFamily: "DM Sans",
       lineHeight: "34px",
       color: colors.grayBrand,
       textWrapping,

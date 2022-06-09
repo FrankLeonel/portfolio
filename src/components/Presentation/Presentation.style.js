@@ -1,10 +1,20 @@
 import styled from "styled-components";
 
-export const PresentationContainer = styled.div(({ theme }) => ({
-  padding: "80px 0",
-  width: "100%",
-  height: "auto",
-}));
+export const PresentationContainer = styled.div(
+  ({ theme: { breakpoints } }) => ({
+    padding: "80px 0",
+    width: "100%",
+    height: "auto",
+
+    [breakpoints.md]: {
+      padding: "180px 0 100px",
+    },
+
+    [breakpoints.lg]: {
+      padding: "80px 0",
+    },
+  })
+);
 
 export const Section = styled.div(({ theme: { breakpoints } }) => ({
   display: "flex",
@@ -34,9 +44,8 @@ export const Text = styled.h1(({ theme: { breakpoints } }) => ({
   display: "inline-block",
   fontSize: "1.8rem",
   fontWeight: 400,
-  fontFamily: "DM Sans",
   textAlign: "center",
-  animation: "appear 2s",
+  animation: "appear 4s",
 
   "@keyframes appear": {
     from: {
@@ -63,33 +72,13 @@ export const Profission = styled.p(({ theme: { breakpoints, colors } }) => ({
   margin: 0,
   display: "inline-block",
   fontSize: "1.8rem",
-  fontFamily: "DM Sans",
   fontWeight: 400,
   textAlign: "center",
   whiteSpace: "nowrap",
   color: colors.grayBrand,
-  borderRight: `2px solid ${colors.primaryLight}`,
-  overflow: "hidden",
 
-  animation:
-    "blinkCursor 600ms steps(40) infinite normal, typing 4s steps(40) 2s normal both",
-
-  "@keyframes blinkCursor": {
-    from: {
-      borderRightColor: colors.primaryLight,
-    },
-    to: {
-      borderRightColor: "transparent",
-    },
-  },
-
-  "@keyframes typing": {
-    from: {
-      width: 0,
-    },
-    to: {
-      width: "9.6em",
-    },
+  span: {
+    color: colors.primaryLight,
   },
 
   [breakpoints.md]: {
@@ -126,7 +115,7 @@ const Button = styled.a(({ theme: { breakpoints } }) => ({
   wordBreak: "break-word",
 
   [breakpoints.sm]: {
-    width: "160px",
+    width: "180px",
   },
 }));
 
@@ -153,7 +142,7 @@ export const AnimationCoding = styled.h1(
       width: "50%",
       paddingLeft: "50px",
       display: "block",
-      fontSize: "5rem",
+      fontSize: "4.6rem",
       fontWeight: "bold",
       letterSpacing: "0.1rem",
       textAlign: "center",

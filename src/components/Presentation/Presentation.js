@@ -1,15 +1,15 @@
 import Content from "components/Content";
 import file from "files/cv.pdf";
-import { Cursor, useTypewriter } from "react-simple-typewriter";
+import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
 import * as S from "./Presentation.style";
 
 const Presentation = () => {
-  const { text } = useTypewriter({
-    words: ["hard", "fun", "a journey", "LIFE!"],
+  const { text: profission } = useTypewriter({
+    words: ["Front-end developer"],
     loop: 0,
-    typeSpeed: 160,
+    typeSpeed: 200,
     deleteSpeed: 100,
-    delaySpeed: 2000,
+    delaySpeed: 1500,
   });
 
   return (
@@ -22,7 +22,12 @@ const Presentation = () => {
               <br />
               <span className="name">Frank Leonel :)</span>
               <br />
-              <S.Profission>Front-end developer.</S.Profission>
+              <S.Profission>
+                {profission}
+                <span>
+                  <Cursor />
+                </span>
+              </S.Profission>
             </S.Text>
             <S.ContainerMedias>
               <S.ContainerCV href={file} target="_blank" rel="noreferrer">
@@ -40,8 +45,18 @@ const Presentation = () => {
           </div>
 
           <S.AnimationCoding>
-            Coding is <span>{text}</span>
-            <Cursor />
+            Coding is{" "}
+            <span>
+              <Typewriter
+                words={["hard", "fun", "a journey", "LIFE!"]}
+                loop={0}
+                cursor
+                cursorStyle="|"
+                typeSpeed={100}
+                deleteSpeed={100}
+                delaySpeed={500}
+              />
+            </span>
           </S.AnimationCoding>
         </S.Section>
       </Content>
