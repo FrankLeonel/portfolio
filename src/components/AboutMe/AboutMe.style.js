@@ -169,7 +169,6 @@ export const ContainerText = styled.div(
       margin: 0,
       lineHeight: "36px",
       color: colors.grayBrand,
-      fontFamily: "DM Sans",
       fontSize: "1.4rem",
     },
 

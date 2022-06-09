@@ -14,13 +14,16 @@ const Card = ({
   const openInNewTab = (url) => {
     window.open(url, "_blank");
   };
+
+  const propsCard = {
+    onClick: url ? () => openInNewTab(url) : null,
+    background: theme.colors[background],
+    orientation: orientation,
+    ...props,
+  };
+
   return (
-    <S.CardContainer
-      onClick={() => openInNewTab(url)}
-      background={theme.colors[background]}
-      orientation={orientation}
-      {...props}
-    >
+    <S.CardContainer {...propsCard}>
       <div>
         <S.Icon
           src={require(`assets/icons/${

@@ -21,7 +21,7 @@ export const Section = styled.div(({ theme }) => ({
 }));
 
 export const Title = styled.strong(({ theme: { breakpoints } }) => ({
-  fontSize: "20px",
+  fontSize: "17px",
   userSelect: "none",
   textAlign: "center",
 

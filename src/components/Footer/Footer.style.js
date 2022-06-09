@@ -5,7 +5,6 @@ import hexToRgba from "utils/hexToRgba";
 export const FooterContainer = styled.footer(({ theme: { colors } }) => ({
   borderTop: `1px solid ${hexToRgba(colors.white, 0.2)}`,
   padding: "24px 0 40px",
-  fontFamily: "DM Sans, sans-serif",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
