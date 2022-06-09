@@ -1,3 +1,4 @@
+import Card from "components/Card";
 import styled from "styled-components";
 
 export const KnowledgeContainer = styled.div(({ theme }) => ({
@@ -12,6 +13,8 @@ export const Section = styled.div(({ theme }) => ({
   alignItems: "flex-start",
   width: "100%",
   height: "auto",
+
+  ul: { display: "flex", height: "auto", flexWrap: "wrap", gap: "20px" },
 }));
 
 export const ContainerText = styled.div(({ theme }) => ({
@@ -32,59 +35,36 @@ export const ContainerText = styled.div(({ theme }) => ({
   },
 }));
 
-export const Skills = styled.div(({ theme }) => ({
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "space-between",
-  alignItems: "flex-start",
-  flexWrap: "wrap",
-  height: "auto",
-  width: "100%",
-  padding: "20px 0 0",
-}));
-
-export const Description = styled.div(({ theme: { breakpoints, colors } }) => ({
-  width: "100%",
-  minHeight: "300px",
-
-  p: {
-    transition: "2s all ease",
-    maxWidth: "500px",
-    lineHeight: "3.2rem",
-    color: colors.grayBrand,
-    fontFamily: "DM Sans",
-    fontSize: "1.4rem",
-  },
-
-  [breakpoints.md]: {
-    width: "50%",
-  },
-}));
-
 export const SkillsCards = styled.div(({ theme: { breakpoints } }) => ({
+  // width: "100%",
+  // display: "flex",
+  // flexWrap: "wrap",
+  // alignItems: "center",
+  // gap: "24px",
+
+  // [breakpoints.md]: {
+  //   width: "50%",
+  // },
+
+  display: "grid",
+  gridTemplateColumns: "repeat(1, 1fr)",
   width: "100%",
-  display: "flex",
-  flexWrap: "wrap",
-  alignItems: "center",
-  gap: "24px",
+  gap: "30px",
 
   [breakpoints.md]: {
-    width: "50%",
+    gridTemplateColumns: "repeat(3, 1fr)",
   },
 }));
 
-export const SkillContent = styled.div(
-  ({ theme: { breakpoints, colors } }) => ({
-    display: "flex",
-    alignItems: "center",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    width: "40%",
-    flexGrow: 1,
-    height: "130px",
-    backgroundColor: colors.secondary,
-    position: "relative",
-    border: `1px solid ${colors.primary}`,
-    transition: "1s all ease",
-  })
-);
+export const KnowledgeCard = styled(Card)(({ theme: { breakpoints } }) => ({
+  flexBasis: "calc(100% - 20px)",
+  flexGrow: 1,
+
+  [breakpoints.sm]: {
+    flexBasis: "calc(50% - 20px)",
+  },
+
+  [breakpoints.lg]: {
+    flexBasis: "calc(33% - 20px)",
+  },
+}));

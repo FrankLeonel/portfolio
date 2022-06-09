@@ -1,27 +1,38 @@
 export const knowledge = [
   {
-    img: "html.svg",
+    img: "html",
     name: "HTML",
-    description: "Html",
+    description:
+      "HTML é uma linguagem baseada em marcação, na qual os elementos são marcados para definir quais informações a página vai exibir.",
   },
   {
-    img: "css.svg",
+    img: "css",
     name: "CSS",
-    description: "CSS",
+    description:
+      "CSS trata-se de uma linguagem de folha de estilo composta por “camadas”, criado com o propósito de estilizar as páginas HTML.",
   },
   {
-    img: "javascript.svg",
-    name: "Javascript",
-    description: "JS",
+    img: "javascript",
+    name: "JavaScript",
+    description:
+      "JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.",
   },
   {
-    img: "react.svg",
+    img: "react",
     name: "ReactJS",
-    description: "ReactJS",
+    description:
+      "ReactJS consiste em uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.",
   },
   {
-    img: "styled.svg",
+    img: "react",
+    name: "React Native",
+    description:
+      "React Native consiste em uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário para aplicações móvel multiplataforma (Android e iOS).",
+  },
+  {
+    img: "styled",
     name: "Styled Components",
-    description: "styled components",
+    description:
+      "Styled Components é uma biblioteca que utiliza o conceito de CSS-in-JS, isto é, que permite escrever códigos CSS dentro do Javascript.",
   },
 ];

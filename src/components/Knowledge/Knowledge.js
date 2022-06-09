@@ -13,27 +13,18 @@ const Knowledge = () => {
             <Divider />
           </S.ContainerText>
 
-          <S.Skills>
-            <S.Description>
-              <p className="changeDescription">
-                *passe o cursor do mouse no card para ler*
-              </p>
-            </S.Description>
-
-            <S.SkillsCards>
-              {knowledge.map((knowledge, index) => (
-                <S.SkillContent key={index}>
-                  <p>{knowledge.name}</p>
-                  <img
-                    src={require(`assets/icons/${knowledge.img}`)}
-                    width="60px"
-                    height="60px"
-                    alt={`ícone do ${knowledge.name}`}
-                  />
-                </S.SkillContent>
-              ))}
-            </S.SkillsCards>
-          </S.Skills>
+          <ul>
+            {knowledge.map((knowledge, index) => (
+              <S.KnowledgeCard
+                key={index}
+                icon={knowledge.img}
+                title={knowledge.name}
+                description={knowledge.description}
+                background="secondary"
+                orientation="column"
+              />
+            ))}
+          </ul>
         </S.Section>
       </Content>
     </S.KnowledgeContainer>
