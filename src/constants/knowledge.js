@@ -41,4 +41,10 @@ export const knowledge = [
     description:
       "Styled Components é uma biblioteca que utiliza o conceito de CSS-in-JS, isto é, que permite escrever códigos CSS dentro do Javascript.",
   },
+  {
+    img: "tailwind-css",
+    name: "Tailwind CSS",
+    description:
+      "Tailwind CSS é uma estrutura CSS de código aberto rápido, flexível e confiável.",
+  },
 ];

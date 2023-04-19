@@ -50,6 +50,7 @@ export const CardContainer = styled.li(
 
     [breakpoints.md]: {
       padding: "32px",
+      maxWidth: "370px",
     },
 
     ...props,

@@ -35,17 +35,6 @@ export const ContainerText = styled.div({
   },
 });
 
-export const SkillsCards = styled.div(({ theme: { breakpoints } }) => ({
-  display: "grid",
-  gridTemplateColumns: "repeat(1, 1fr)",
-  width: "100%",
-  gap: "30px",
-
-  [breakpoints.md]: {
-    gridTemplateColumns: "repeat(3, 1fr)",
-  },
-}));
-
 export const KnowledgeCard = styled(Card)(({ theme: { breakpoints } }) => ({
   flexBasis: "calc(100% - 20px)",
   flexGrow: 1,
