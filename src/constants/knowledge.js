@@ -18,6 +18,12 @@ export const knowledge = [
       "JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.",
   },
   {
+    img: "typescript",
+    name: "TypeScript",
+    description:
+      "TypeScript é uma linguagem de programação fortemente tipada que se baseia em JavaScript, oferecendo melhores ferramentas em qualquer escala.",
+  },
+  {
     img: "react",
     name: "ReactJS",
     description:

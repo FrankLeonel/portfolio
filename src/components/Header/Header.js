@@ -1,31 +1,13 @@
+import { menuItems } from "constants/menuItems";
 import Content from "components/Content";
 import Drawer from "components/Drawer";
 import MenuBurguer from "components/MenuBurguer";
-import useToggle from "hooks/useToggle";
-import * as S from "./Header.style";
 import MenuMain from "./MenuMain";
+import useToggle from "hooks/useToggle";
 
+import * as S from "./Header.style";
 const Header = () => {
   const [showMenu, onToggleMenu] = useToggle();
-
-  const menuItems = [
-    {
-      label: "Quem sou",
-      path: "#about_me",
-    },
-    {
-      label: "Projetos",
-      path: "#projects",
-    },
-    {
-      label: "Habilidades",
-      path: "#skills",
-    },
-    {
-      label: "Conhecimentos",
-      path: "#conhecimentos",
-    },
-  ];
 
   return (
     <S.Header>

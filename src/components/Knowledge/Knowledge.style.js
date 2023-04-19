@@ -1,13 +1,13 @@
 import Card from "components/Card";
 import styled from "styled-components";
 
-export const KnowledgeContainer = styled.div(({ theme }) => ({
+export const KnowledgeContainer = styled.div({
   padding: "80px 0",
   width: "100%",
   height: "auto",
-}));
+});
 
-export const Section = styled.div(({ theme }) => ({
+export const Section = styled.div({
   display: "flex",
   flexDirection: "column",
   alignItems: "flex-start",
@@ -15,9 +15,9 @@ export const Section = styled.div(({ theme }) => ({
   height: "auto",
 
   ul: { display: "flex", height: "auto", flexWrap: "wrap", gap: "20px" },
-}));
+});
 
-export const ContainerText = styled.div(({ theme }) => ({
+export const ContainerText = styled.div({
   width: "100%",
   padding: 0,
   display: "flex",
@@ -33,19 +33,9 @@ export const ContainerText = styled.div(({ theme }) => ({
     fontSize: "2.8rem",
     fontWeight: 500,
   },
-}));
+});
 
 export const SkillsCards = styled.div(({ theme: { breakpoints } }) => ({
-  // width: "100%",
-  // display: "flex",
-  // flexWrap: "wrap",
-  // alignItems: "center",
-  // gap: "24px",
-
-  // [breakpoints.md]: {
-  //   width: "50%",
-  // },
-
   display: "grid",
   gridTemplateColumns: "repeat(1, 1fr)",
   width: "100%",

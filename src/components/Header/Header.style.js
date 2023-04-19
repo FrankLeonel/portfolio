@@ -12,13 +12,13 @@ export const Header = styled.header(({ theme: { colors } }) => ({
   backgroundColor: colors.primary,
 }));
 
-export const Section = styled.div(({ theme }) => ({
+export const Section = styled.div({
   width: "100%",
   display: "flex",
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "space-between",
-}));
+});
 
 export const Title = styled.strong(({ theme: { breakpoints } }) => ({
   fontSize: "17px",

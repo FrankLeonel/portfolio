@@ -8,7 +8,7 @@ export const SkillsContainer = styled.div(({ theme: { colors } }) => ({
   backgroundColor: colors.secondary,
 }));
 
-export const Section = styled.div(({ theme }) => ({
+export const Section = styled.div({
   display: "flex",
   flexDirection: "column",
   alignItems: "flex-start",
@@ -16,9 +16,9 @@ export const Section = styled.div(({ theme }) => ({
   height: "auto",
 
   ul: { display: "flex", height: "auto", flexWrap: "wrap", gap: "20px" },
-}));
+});
 
-export const ContainerText = styled.div(({ theme }) => ({
+export const ContainerText = styled.div({
   width: "100%",
   padding: 0,
   display: "flex",
@@ -34,7 +34,7 @@ export const ContainerText = styled.div(({ theme }) => ({
     fontSize: "2.8rem",
     fontWeight: 500,
   },
-}));
+});
 
 export const SkillCard = styled(Card)(({ theme: { breakpoints } }) => ({
   flexBasis: "calc(100% - 20px)",

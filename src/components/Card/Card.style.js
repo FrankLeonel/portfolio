@@ -19,14 +19,10 @@ export const CardContainer = styled.li(
     minHeight: "380px",
     listStyleType: "none",
     backgroundColor: background,
-    cursor: "pointer",
+
     border: `1px solid ${colors.primary}`,
     transition: "1s all ease",
     overflowY: "auto",
-
-    "&:hover": {
-      border: `1px solid ${colors.primaryLight}`,
-    },
 
     "> div": {
       display: "flex",

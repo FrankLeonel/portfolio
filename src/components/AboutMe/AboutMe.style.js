@@ -7,12 +7,12 @@ export const AboutMeContainer = styled.div(({ theme: { colors } }) => ({
   height: "auto",
 }));
 
-export const Section = styled.div(({ theme }) => ({
+export const Section = styled.div({
   display: "flex",
   alignItems: "flex-start",
   width: "100%",
   height: "auto",
-}));
+});
 
 export const ContainerImage = styled.div(
   ({ theme: { breakpoints, colors } }) => ({
@@ -46,7 +46,7 @@ export const ContainerImage = styled.div(
   })
 );
 
-export const AboutFigure = styled.div(({ theme: { breakpoints, colors } }) => ({
+export const AboutFigure = styled.div(({ theme: { breakpoints } }) => ({
   display: "flex",
   webkitBoxPack: "center",
   msFlexPack: "center",

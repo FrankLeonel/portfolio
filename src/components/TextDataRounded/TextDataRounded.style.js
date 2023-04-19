@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const TextDataRoundedContainer = styled.li(({ theme }) => ({
+export const TextDataRoundedContainer = styled.li({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   gap: "16px",
   listStyle: "none",
-}));
+});
 
 export const RoundedIcon = styled.div(({ theme: { colors } }) => ({
   display: "flex",
@@ -27,17 +27,17 @@ export const RoundedIcon = styled.div(({ theme: { colors } }) => ({
   },
 }));
 
-export const ContainerText = styled.div(({ theme }) => ({
+export const ContainerText = styled.div({
   display: "flex",
   flexDirection: "inherit",
   gap: "2px",
-}));
+});
 
-export const Title = styled.h3(({ theme }) => ({
+export const Title = styled.h3({
   margin: 0,
   textAlign: "center",
   fontSize: "1.5rem",
-}));
+});
 
 export const Description = styled.p(({ theme: { colros } }) => ({
   margin: 0,

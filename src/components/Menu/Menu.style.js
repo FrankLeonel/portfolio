@@ -22,7 +22,7 @@ export const Container = styled.div(({ theme: { colors } }) => ({
   overflow: "auto",
 }));
 
-export const Menu = styled.div(({ theme }) => ({
+export const Menu = styled.div(({
   position: "relative",
   width: "100%",
   height: "calc(100% - 70px)",

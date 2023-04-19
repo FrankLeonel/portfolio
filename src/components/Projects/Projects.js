@@ -1,5 +1,4 @@
 import github from "assets/images/github.json";
-import Card from "components/Card";
 import Content from "components/Content";
 import Divider from "components/Divider";
 import useRepositories from "hooks/useRepositories";
@@ -30,7 +29,7 @@ const Projects = () => {
           ) : (
             <S.GridProjects>
               {repositories.map((repos, index) => (
-                <Card
+                <S.ProjectCard
                   key={index}
                   icon={repos.language}
                   title={repos.name}
