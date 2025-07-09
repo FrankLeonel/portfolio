@@ -1,6 +1,7 @@
+import styled from "styled-components";
+
 import { ReactComponent as CrossIcon } from "assets/icons/cross-icon.svg";
 import { ReactComponent as MenuBurger } from "assets/icons/menu-icon.svg";
-import styled from "styled-components";
 
 export const Header = styled.header(({ theme: { colors } }) => ({
   position: "fixed",

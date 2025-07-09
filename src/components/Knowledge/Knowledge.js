@@ -1,6 +1,7 @@
 import Content from "components/Content";
 import Divider from "components/Divider";
 import { knowledge } from "constants/knowledge";
+
 import * as S from "./Knowledge.style";
 
 const Knowledge = () => {

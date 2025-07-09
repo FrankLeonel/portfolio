@@ -1,4 +1,5 @@
 import Content from "components/Content";
+
 import * as S from "./Footer.style";
 
 const Footer = () => {

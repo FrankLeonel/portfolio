@@ -1,5 +1,6 @@
-import Card from "components/Card";
 import styled from "styled-components";
+
+import Card from "components/Card";
 
 export const KnowledgeContainer = styled.div({
   padding: "80px 0",

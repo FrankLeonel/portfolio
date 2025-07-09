@@ -2,6 +2,7 @@ import github from "assets/images/github.json";
 import Content from "components/Content";
 import Divider from "components/Divider";
 import useRepositories from "hooks/useRepositories";
+
 import * as S from "./Projects.style";
 
 const Projects = () => {

@@ -1,6 +1,7 @@
 import Content from "components/Content";
 import Divider from "components/Divider";
 import { skills } from "constants/skills";
+
 import * as S from "./Skills.style";
 
 const Skills = () => {

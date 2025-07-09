@@ -1,5 +1,6 @@
-import apiGitHub from "config/api";
 import { useEffect, useState } from "react";
+
+import apiGitHub from "config/api";
 
 const useRepositories = () => {
   const [repositories, setRepositories] = useState([]);

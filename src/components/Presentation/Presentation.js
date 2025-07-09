@@ -1,6 +1,8 @@
+import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
+
 import Content from "components/Content";
 import file from "files/cv.pdf";
-import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
+
 import * as S from "./Presentation.style";
 
 const Presentation = () => {

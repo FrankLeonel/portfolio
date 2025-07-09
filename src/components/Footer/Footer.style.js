@@ -1,5 +1,6 @@
-import { ReactComponent as Dev } from "assets/icons/dev.svg";
 import styled from "styled-components";
+
+import { ReactComponent as Dev } from "assets/icons/dev.svg";
 import hexToRgba from "utils/hexToRgba";
 
 export const FooterContainer = styled.footer(({ theme: { colors } }) => ({

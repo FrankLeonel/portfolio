@@ -1,5 +1,7 @@
-import Menu from "components/Menu";
 import React, { useEffect } from "react";
+
+import Menu from "components/Menu";
+
 import * as S from "./Drawer.style";
 
 const Drawer = ({ show, title, items = [], onClose }) => {

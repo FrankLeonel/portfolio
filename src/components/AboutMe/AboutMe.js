@@ -10,6 +10,7 @@ import { ReactComponent as ReactIcon } from "assets/icons/react.svg";
 import Content from "components/Content";
 import Divider from "components/Divider";
 import TextDataRounded from "components/TextDataRounded";
+
 import * as S from "./AboutMe.style";
 
 const AboutMe = () => {
